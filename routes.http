@@ -15,3 +15,11 @@ Content-Type: audio/mpeg
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 ###
+
+# @name create-transcription
+POST http://localhost:3333/videos/566e1d02-76bf-4f49-8f4b-1a6c4dc4e6ec/transcription
+Content-Type: application/json
+
+{
+  "prompt": "motivation"
+}

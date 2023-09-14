@@ -4,22 +4,34 @@ GET http://localhost:3333/prompts
 ###
 
 # @name upload
-POST  http://localhost:3333/videos
+POST http://localhost:3333/videos
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="file"; filename="example.mp3"
 Content-Type: audio/mpeg
 
-< ./exemplo.mp3
+< ./example.mp3
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 ###
 
 # @name create-transcription
-POST http://localhost:3333/videos/566e1d02-76bf-4f49-8f4b-1a6c4dc4e6ec/transcription
+POST http://localhost:3333/videos/df67a5d6-5475-4a67-b03c-b4b57d77e85c/transcription
 Content-Type: application/json
 
 {
-  "prompt": "motivation"
+  "prompt": "fisica, aula, velocidade media"
+}
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "df67a5d6-5475-4a67-b03c-b4b57d77e85c",
+  "temperature": 0.5,
+  "template": "Gere um resumo da transcrição do vídeo informada a seguir: '''{transcription}'''"
 }

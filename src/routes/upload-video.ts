@@ -19,7 +19,7 @@ export async function uploadVideoRoute(app: FastifyInstance){
   })
 
   app.post('/videos', async (req, reply) => {
-    const data =  await req.file()
+    const data = await req.file()
 
     if (!data) {
       return reply.status(400).send({ error: 'Missing file input' });

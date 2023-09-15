@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon src/server.ts",
     "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.6.0",
+    "nodemon": "^3.0.1",
     "prisma": "^5.3.0",
     "tsx": "^3.12.10",
     "typescript": "^5.2.2"

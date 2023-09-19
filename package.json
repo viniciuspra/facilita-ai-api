@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node build/server.js",
-    "build": "tsc",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "nodemon --watch src src/server.ts"
   },
   "keywords": [],
@@ -33,6 +32,7 @@
     "dotenv": "^16.3.1",
     "fastify": "^4.23.1",
     "openai": "^4.6.0",
+    "pm2": "^5.3.0",
     "zod": "^3.22.2"
   }
 }

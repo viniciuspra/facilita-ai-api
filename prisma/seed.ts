@@ -55,6 +55,27 @@ Transcrição:
 '''`.trim()
     }
   })
+
+  await prisma.prompt.create({
+    data: {
+      title: 'Trascrição da fala',
+      template: `Seu papel é gerar uma transcrição sucinta a fala do vídeo fornecido na primeira pessoa, 
+
+      colocando as falas entre aspas, 
+      
+      como se fossem diretamente da pessoa que fala.
+      
+       Além disso, adicione comentários relevantes destacando 
+      
+      informações importantes ou contextos necessários para compreender melhor as falas.
+      '''
+      
+      Transcrição:
+      '''
+      {transcription}
+      '''`.trim()
+    }
+  })
 }
 
 main()

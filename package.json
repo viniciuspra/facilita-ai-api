@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.js --env production",
-    "dev": "nodemon --watch src src/server.ts"
+    "dev": "tsx src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +18,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.6.0",
-    "nodemon": "^3.0.1",
     "prisma": "^5.3.0",
-    "ts-node": "^10.9.1",
     "tsx": "^3.12.10",
     "typescript": "^5.2.2"
   },

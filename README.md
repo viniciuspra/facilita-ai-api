@@ -64,9 +64,6 @@ Para iniciar o servidor em modo de desenvolvimento, execute o seguinte comando:
  $ npm run dev
 ```
 
-## Deploy 🚀 
-A API do Facilita.ai foi implantada no [Render](https://render.com) e está disponível no seguinte URL: https://facilita-ai-api.onrender.com.
-
 ## Licença 📄:
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.

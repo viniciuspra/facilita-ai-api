@@ -1,3 +1,11 @@
+⚠️ **AVISO IMPORTANTE: Este projeto não está mais em funcionamento** ⚠️
+
+A API utilizada por esta aplicação (`facilita-ai-api.onrender.com`) foi desativada e não está mais disponível. Como resultado, as funcionalidades deste projeto não funcionam mais.
+
+Este repositório permanece disponível apenas para fins de referência e estudo.
+
+---
+
 <h1 align="center">Facilita.ai API</h1>
 
 <p align="center">
